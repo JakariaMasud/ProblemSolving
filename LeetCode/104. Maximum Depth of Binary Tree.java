@@ -1,7 +1,7 @@
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public int maxDepth(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
-        if (root == null) return result;
+        if (root == null) return 0;
         Queue<TreeNode> treeQueue = new LinkedList<>();
         treeQueue.offer(root);
         while (!treeQueue.isEmpty()) {
@@ -16,6 +16,6 @@ class Solution {
             result.add(sublist);
         }
         
-        return result;
+        return result.size();
     }
 }
