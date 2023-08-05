@@ -1,3 +1,4 @@
+class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode start = new ListNode(0);
         start.next = head;
@@ -15,3 +16,4 @@
         return start.next;
 
     }
+}

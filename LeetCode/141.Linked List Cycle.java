@@ -1,4 +1,5 @@
-public boolean hasCycle(ListNode head) {
+class Solution {
+    public boolean hasCycle(ListNode head) {
         if (head == null) return false;
         Set<ListNode> nodeVisited = new HashSet<>();
         while (head.next != null) {
@@ -11,3 +12,4 @@ public boolean hasCycle(ListNode head) {
         }
         return false;
     }
+}

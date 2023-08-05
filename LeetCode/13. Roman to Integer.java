@@ -1,4 +1,5 @@
-public int romanToInt(String s) {
+class Solution {
+    public int romanToInt(String s) {
         Map<Character,Integer> values = new HashMap<>();
         int previousValue=0;
         int sum=0;
@@ -26,3 +27,4 @@ public int romanToInt(String s) {
         
     }
 
+}
